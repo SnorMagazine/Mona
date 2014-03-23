@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#">
+<HEAD>
+	<meta charset="utf-8">  
+	<TITLE>MONA - LISTEN by @SnorMagazine</TITLE>
+    <meta name="description" content="Meet MONA, the design guru. Listen to conversations with her disciples.">
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Conversations with MONA by @SnorMagazine" />
+	<meta property="og:description" content="Meet MONA, the design guru. Listen to conversations with her disciples."/>	
+	<meta property="og:image" content="http://www.dearmona.com/images/MONA_icn.jpg" />
+	<meta property="og:image" content="http://www.dearmona.com/images/screen.jpg" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta property="og:image" content="http://www.dearmona.com/images/MONA_icn.jpg" />
+	<meta property="og:image:width" content="400" />
+	<meta property="og:image:height" content="400" />
+	<meta property="og:image" content="http://www.dearmona.com/images/screen.jpg" />
+	<meta property="og:locale" content="en_GB" />
+	<meta property="og:site_name" content="MONA" />
+    <link rel="shortcut icon" href="http://www.dearmona.com/favicon.ico" />
+    <link rel="icon" type="image/png" href="http://www.dearmona.com/favicon.png" />
+    <LINK href="stylesheet.css" rel="stylesheet" type="text/css">
+	<SCRIPT TYPE="text/javascript" SRC="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></SCRIPT>
+	<SCRIPT TYPE="text/javascript" SRC="scripts/walrus.js"></SCRIPT>
+	<SCRIPT TYPE="text/javascript" SRC="scripts/jquery.tmpl.min.js"></SCRIPT>
+    <SCRIPT TYPE="text/javascript" SRC="scripts/jquery.tipsy.js"></SCRIPT>
+	<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+	  {parsetags: 'explicit'}
+	</script>
+</HEAD>
+<BODY>
+<a id="ajaxInfo" class="ajax hoverTip" title="About MONA" href="ajax/about.html"><div class="monaInfo"></div></a>
+<a id="listen" class="hoverTip" title="What peole say to MONA" href="listen.html"><div class="monaCnvrsCur"></div></a>
+<a id="terminal" class="hoverTip" title="Talk to MONA" href="/"><div class="monaTerm"></div></a>
+<div id="infobox"></div>
+<DIV ID="mona">
+	<section class="content">
+		<h1 style="color:blue; margin-top:20px;">What people say to mona:</h1>
+	<script id="monaData" type="text/x-jquery-tmpl">
+	<li class = "date"><span class="time">${date}</span></li>
+	<li class= "term">
+	${comment}
+	</li>
+	</script>
+	<ul id="monaList"></ul>
+</section>
+</DIV>
+</BODY>
+</HTML>

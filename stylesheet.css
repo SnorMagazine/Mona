@@ -1,0 +1,242 @@
+body {
+font-family: "Arial Black", Arial, Helvetica;
+font-weight: 900;
+font-size: 30px;
+background: #fff;
+width: 100%;
+position: absolute;
+}
+.main, #container, .content {
+height: 100%;
+}
+.content {
+display: block;
+overflow: hidden;
+}
+a,a:link,a:visited {
+text-decoration: none;
+color: #00f;
+}
+a:hover {
+color: #1ddc4d;
+}
+section.content {
+margin: 0 5%;
+width: 90%;
+}
+#mona {
+position: absolute;
+margin-top: 30px;
+top: 0;
+width: 100%;
+}
+.termReverse {
+font-size: 30px;
+color: transparent;
+background: #00f;
+margin-left: 0;
+}
+#infobox {
+position: fixed;
+display: block;
+z-index: 1000;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background-color: rgba(255,255,255,1);
+overflow:scroll;
+}
+#ajaxMain{
+	margin-left:15%;
+	width:70%;
+	margin-top:65px;
+	color:#1ddc4d;
+}
+ul, li {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+li{
+display: block;
+padding: 25px 0;
+min-height: 50px;
+}
+li.date{
+	color:white;
+	font-style:italic;
+	padding:0 0 0 0;
+	margin:50px 0 25px 0;
+	min-height:30px;
+}
+.time{
+	background-color: #b5c8fb;
+	padding:0 10px;
+}
+.term {
+font-size: 30px;
+font-weight: bold;
+background: none;
+}
+p {
+margin:0 0 30px 0;
+}
+
+.content ul li.term {
+color: #0000ff;
+}
+
+.termReverse {
+font-size: 30px;
+color: transparent;
+background: #00f;
+margin-left: 0;
+}
+
+a.termopen,a.termopen:link,a.termopen:visited {
+text-decoration: none;
+color: #00f;
+background: none;
+position:absolute;
+}
+a.termopen:hover {
+text-decoration: none;
+color: #1ddc4d;
+}
+a.termopen:active {
+text-decoration: none;
+color: #1ddc4d;
+}
+#termOpenLink {
+display: block;
+margin-left: 5%;
+width: 90%;
+padding-top: 55px;
+padding-bottom:400px;
+}
+ #ajaxInfo {
+position: fixed;
+bottom: 40px;
+right: 40px;
+z-index: 100;
+width: 50px;
+height: 50px;
+padding:7px 5px 5px 5px;
+}
+ #listen {
+position: fixed;
+bottom: 40px;
+right: 95px;
+z-index: 400;
+width: 50px;
+height: 50px;
+padding:7px 5px 5px 5px;
+}
+ #terminal {
+position: fixed;
+bottom: 40px;
+right: 150px;
+z-index: 400;
+width: 50px;
+height: 50px;
+padding:7px 5px 5px 5px;
+}
+
+#ex {
+position: fixed;
+bottom: 40px;
+right: 40px;
+z-index: 500;
+width: 50px;
+height: 50px;
+padding:7px 5px 5px 5px;
+}
+
+ul#social{
+    position:fixed;
+    list-style:none;
+    display:inline;
+    bottom:40px;
+    right:60px;
+}
+
+#social a{
+    font-size:12px;
+}
+
+ul#social li{
+    display:inline;
+    margin:5px 5px 0px 5px;
+    float:right;
+    padding:0;
+}
+/*MOBILE INPUT*/
+#mobileInput{
+    position:fixed;
+    width:50%;
+    height:100%;
+    top:50px;
+    bottom:50px;
+    z-index:10000;
+    opacity:0;
+}
+
+/*///////////////////////////////////////*/
+
+.monaInfo,
+.monaInfoCur,
+.monaEx,
+.monaTerm,
+.monaTermCur,
+.monaCnvrs,
+.monaCnvrsCur{background-image:url('sprite/input.png');background-repeat:no-repeat}
+.monaInfo:hover{background-position:0px 0px;width:44px;height:45px;}
+.monaInfo{background-position:-44px 0px;width:44px;height:45px;}
+.monaInfoCur{background-position:0px 0px;width:44px;height:45px;}
+.monaInfoCur:hover{background-position:-44px 0px;width:44px;height:45px;}
+.monaTerm:hover{background-position:-88px 0px;width:44px;height:44px;}
+.monaTerm{background-position:0px -45px;width:44px;height:44px;}
+.monaTermCur{background-position:-88px 0px;width:44px;height:44px;}
+.monaTermCur:hover{background-position:0px -45px;width:44px;height:44px;}
+.monaEx:hover{background-position:-44px -45px;width:44px;height:44px;}
+.monaEx{background-position:-88px -45px;width:44px;height:44px;}
+.monaCnvrs:hover{background-position:-132px 0px;width:44px;height:44px;}
+.monaCnvrs{background-position:-132px -44px;width:44px;height:44px;}
+.monaCnvrsCur{background-position:-132px 0px;width:44px;height:44px;}
+.monaCnvrsCur:hover{background-position:-132px -44px;width:44px;height:44px;}
+@media only screen and (-webkit-min-device-pixel-ratio: 2.0), only screen and (min--moz-device-pixel-ratio: 2.0), only screen and (-o-min-device-pixel-ratio: 200/100), only screen and (min-device-pixel-ratio: 2.0) {.monaInfo,
+.monaInfo,
+.monaInfoCur,
+.monaEx,
+.monaTerm,
+.monaTermCur,
+.monaCnvrs,
+.monaCnvrsCur{background-image:url('sprite/input@2x.png');-webkit-background-size: 176px 89px;-moz-background-size: 176px 89px;background-size: 176px 89px;}}
+
+/*JQUERY TIPSY*/
+.tipsy { font-size: 10px; position: absolute; padding: 5px; z-index: 100000; }
+  .tipsy-inner { background-color: #00F; color: #FFF; max-width: 200px; padding: 5px 8px 4px 8px; text-align: center; }
+
+  /* Rounded corners */
+  .tipsy-inner { border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
+  
+  /* Uncomment for shadow */
+  /*.tipsy-inner { box-shadow: 0 0 5px #000000; -webkit-box-shadow: 0 0 5px #000000; -moz-box-shadow: 0 0 5px #000000; }*/
+  
+  .tipsy-arrow { position: absolute; width: 0; height: 0; line-height: 0; border: 5px dashed #00F; }
+  
+  /* Rules to colour arrows */
+  .tipsy-arrow-n { border-bottom-color: #00F; }
+  .tipsy-arrow-s { border-top-color: #00F; }
+  .tipsy-arrow-e { border-left-color: #00F; }
+  .tipsy-arrow-w { border-right-color: #00F; }
+  
+	.tipsy-n .tipsy-arrow { top: 0px; left: 50%; margin-left: -5px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent; }
+    .tipsy-nw .tipsy-arrow { top: 0; left: 10px; border-bottom-style: solid; border-top: none; border-left-color: transparent; border-right-color: transparent;}
+    .tipsy-ne .tipsy-arrow { top: 0; right: 10px; border-bottom-style: solid; border-top: none;  border-left-color: transparent; border-right-color: transparent;}
+  .tipsy-s .tipsy-arrow { bottom: 0; left: 50%; margin-left: -5px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
+    .tipsy-sw .tipsy-arrow { bottom: 0; left: 20px; border-top-style: solid; border-bottom: none;  border-left-color: transparent; border-right-color: transparent; }
+    .tipsy-se .tipsy-arrow { bottom: 0; right: 20px; border-top-style: solid; border-bottom: none; border-left-color: transparent; border-right-color: transparent; }
+  .tipsy-e .tipsy-arrow { right: 0; top: 50%; margin-top: -5px; border-left-style: solid; border-right: none; border-top-color: transparent; border-bottom-color: transparent; }
+  .tipsy-w .tipsy-arrow { left: 0; top: 50%; margin-top: -5px; border-right-style: solid; border-left: none; border-top-color: transparent; border-bottom-color: transparent; }
